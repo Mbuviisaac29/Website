@@ -1,23 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Embedded Training Documentation</title>
-    <style>
-      img {
-        width: 200px;
-        border-radius: 100px;
-        margin-right: 10px;
-      }
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embedded Training Documentation</title>
 
-      p {
-        font-size: larger;
-      }
-    </style>
-    <body>
-      <img src="images/WhatsApp Image 2025-06-24 at 11.42.34.jpeg" />
-      <h1>Project Management and Documentation</h1>
-      <a href="about.html">More on the Portfolio</a>
-      <h2 id="p1">Table of Content</h2>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+      color: #333;
+      padding: 2rem;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.125rem;
+      max-width: 60ch;
+    }
+
+    a {
+      display: inline-block;
+      margin: 0.5rem 1rem 1rem 0;
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(45deg, #6366f1, #3b82f6, #06b6d4);
+      background-size: 200% 200%;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+      transition: background-position 0.5s, transform 0.3s ease;
+    }
+
+    a:hover {
+      background-position: right center;
+      transform: scale(1.05);
+    }
+
+    #p1 {
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    /* Floating Buttons */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      z-index: 1000;
+    }
+
+    .floating-buttons a {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .floating-buttons a:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/WhatsApp Image 2025-06-24 at 11.42.34.jpeg" alt="Profile Image" />
+  <h1>Project Management and Documentation</h1>
+
+  <a href="about.html">PROFILE</a>
+  <a href="about.html">More on the Portfolio</a>
+  <a href="github.html">Ensuing Module</a>
+
+  <h2 id="p1">Table of Content</h2>
+
+  <!-- Floating Navigation -->
+  <div class="floating-buttons">
+    <a href="index.html">🏠 Home</a>
+    <a href="github.html">➡ Next</a>
+  </div>
+</body>
+</html>
+
       <p>1.Module 1</p>
       <a href="github.html">Git and Github</a>
       <p>2.Module 2</p>
